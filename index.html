@@ -1,29 +1,46 @@
-<html>
-</head>
-<style>
-    :root {
-       --gradient:linear-gradient(90deg, rgba(255,227,216,1) 44%, rgba(187,187,187,1) 100%);;
-    }
-    body {
-        min-height: 100vh;
-        background-color: grey;
-        background-image: var(--gradient);
-        background-size: 200%;
-        animation: gradient-animation 25s infinite alternate;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
     }
     
-    @keyframes gradient-animation {
-        0% {
-            background-position: left;
-        }
-        
-        100% {
-            background-position: right;
-        }
+    .nav li {
+      float: left;
+    }
+    
+    .nav li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    .nav li a:hover {
+      background-color: #111;
+    }
+     
+    </style>
 
-   } 
-</style>
+</head>
     <body>
+        <div class="nav">
+            <ul>
+                <li><a href="">Biodata</a></li>
+                <li><a href="portofolio.html">Portofolio</a></li>
+            </ul>
+        </div>
+        
         <h1 style="color: #0A043C; font-weight: bolder; text-align: center; font-size: 40px;">Alia Anom Fretty Lita</h1>
         <img src="IMG_9009.JPG" width="210" style="display:block; margin: auto;">
 
