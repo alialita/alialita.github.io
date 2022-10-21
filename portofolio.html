@@ -1,155 +1,196 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .nav ul {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-          overflow: hidden;
-          background-color: #333;
-        }
-        
-        .nav li {
-          float: left;
-        }
-        
-        .nav li a {
-          display: block;
-          color: white;
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
-        }
-        
-        .nav li a:hover {
-          background-color: #111;
-        }
-         
-        </style>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./asset/css/style.css">
+
+    <style> 
+      .nav ul { 
+          list-style-type: none; 
+          margin: 0; 
+          padding: 0; 
+          overflow: hidden; 
+          background-color: #333; 
+      } 
+
+      .nav li { 
+          float: left; 
+      } 
+
+      .nav li a { 
+          display: block; 
+          color: white; 
+          text-align: center; 
+          padding: 14px 16px; 
+          text-decoration: none; 
+      } 
+
+      .nav li a:hover { 
+          background-color: #111; 
+      } 
+
+      :root { 
+          --gradient: linear-gradient(90deg, rgba(255, 227, 216, 1) 44%, rgba(187, 187, 187, 1) 100%); 
+          ; 
+      } 
+
+      body { 
+          min-height: 100vh; 
+          background-color: grey; 
+          background-image: var(--gradient); 
+          background-size: 200%; 
+          animation: gradient-animation 25s infinite alternate; 
+      } 
+
+      @keyframes gradient-animation { 
+          0% { 
+              background-position: left; 
+          } 
+
+          100% { 
+              background-position: right; 
+          } 
+      } 
+  </style> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light shadow-sm sticky-top">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link fw-bold text-dark" aria-current="page" href="index.html">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold text-dark" aria-current="page" href="#">Portofolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold text-dark" aria-current="page" href="index.html">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div id="hero-portofolio" class="container d-flex flex-column align-items-center justify-content-center">
+        <h1 class="title fw-bold">Portofolio</h1>
+        <p>Alia Anom Fretty Lita</p>
+    </div>
+
+    <h2 class="title fw-bold container mb-3">Work Experience</h2>
+    <table class="table container mb-5 table-light">
+      <thead>
+        <tr>
+          <th scope="col">No</th>
+          <th scope="col">Nama</th>
+          <th scope="col">Posisi</th>
+          <th scope="col">Tahun</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Lembaga Pengelola Dana Pendidikan</td>
+          <td>Human Resource Intern</td>
+          <td>2022</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Direktorat Jenderal Pemasyarakatan</td>
+          <td>Kerjasama dan Evaluasi Intern</td>
+          <td>2022</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 class="title fw-bold container mb-3">International Conference</h2>
+    <table class="table container mb-5 table-light">
+      <thead>
+        <tr>
+          <th scope="col">No</th>
+          <th scope="col">Nama</th>
+          <th scope="col">Posisi</th>
+          <th scope="col">Tahun</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Prosperity World Model United Nations</td>
+          <td>Delegate of Economic and Social Council (ECOSOC)</td>
+          <td>2021</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Global Connective Multilateral Model United Nations</td>
+          <td>Delegate of World of Tourism Organization (UNWTO)</td>
+          <td>2021</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 class="title fw-bold container mb-3">Volunteer</h2>
+    <table class="table container mb-5 table-light">
+      <thead>
+        <tr>
+          <th scope="col">No</th>
+          <th scope="col">Nama</th>
+          <th scope="col">Posisi</th>
+          <th scope="col">Tahun</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Dies Natalis Ilmu Pemerintahan Unsika</td>
+          <td>Head of Publication Decoration and Documentation Division</td>
+          <td>2021</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>PKKMB FISIP UNSIKA</td>
+          <td>Publication Decoration and Documentation Division</td>
+          <td>2021</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 class="title fw-bold container mb-3">University Projects</h2>
+    <table class="table container mb-5 table-light">
+      <thead>
+        <tr>
+          <th scope="col">No</th>
+          <th scope="col">Nama</th>
+          <th scope="col">Posisi</th>
+          <th scope="col">Tahun</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>National Webinar Sistem Kepartasian dan Pemilu di Indonesia</td>
+          <td>Publication Decoration and Documentation Division</td>
+          <td>2021</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Webinar Birokrasi Pemerintahan</td>
+          <td>Publication Decoration and Documentation Division</td>
+          <td>2021</td>
+        </tr>
+      </tbody>
+    </table>
+
     
-    </head>
-        <body>
-            <div class="nav">
-                <ul>
-                    <li><a href="index.html">Biodata</a></li>
-                    <li><a href="#">Portofolio</a></li>
-                </ul>
-            </div>
 
-</head>
-<body style="background-color: #FFE3D8 ;">
-    
-    <h1 style="color: #0A043C; font-weight: bold; text-align: center; font-size: 50px;">Portofolio</h1>
-
-    <h2 style="color: #0A043C;">Work Experience</h2>
-
-    <table>
-        <style> table {border-collapse: initial ;
-        width: 100%;
-        } 
-        
-        table, th, td {border: 1px solid black;
-        }
-
-        th, td { 
-            text-align: center; 
-            padding: 8px;
-            font-weight: normal;
-        }
-        tr:nth-child(even) {background-color: #03506F;}
-
-        th {
-            background-color: #03506F;
-            color: white;
-        }
-        </style>
-        <tr>
-        <th>No</th>
-        <th>Nama</th>
-        <th>Posisi</th>
-        <th>Tahun</th>
-        </tr>
-
-        <tr>
-            <th>1</th>
-            <th>Lembaga Pengelola Dana Pendidikan</th>
-            <th>Human Resource Intern</th>
-            <th>2022</th>
-        </tr>
-
-        <tr>
-            <th>2</th>
-            <th>Direktorat Jenderal Pemasyarakatan</th>
-            <th>Kerjasama dan Evaluasi Intern</th>
-            <th>2022</th>
-        </tr>
-    </table>
-
-    <h2 style="color: #0A043C ;">Volunteer</h2>
-    <table border="1">
-        <tr>
-            <th>No</th>
-            <th>Nama</th>
-            <th>Posisi</th>
-            <th>Tahun</th>
-        </tr>
-
-        <tr>
-            <th>1</th>
-            <th>Dies Natalis Ilmu Pemerintahan Unsika</th>
-            <th>Head of Publication Decoration and Documentation Division</th>
-            <th>2021</th>
-        </tr>
-
-        <tr>
-            <th>2</th>
-            <th>PKKMB FISIP UNSIKA</th>
-            <th>Publication Decoration and Documentation Division</th>
-            <th>2021</th>
-        </tr>
-
-        <tr>
-            <th>3</th>
-            <th>Prosperity World Model United Nations</th>
-            <th>Delegate of Economic and Social Council (ECOSOC)</th>
-            <th>2021</th>
-        </tr>
-
-        <tr>
-            <th>4</th>
-            <th>Global Connective Multilateral Model United Nations</th>
-            <th>Delegate of World of Tourism Organization (UNWTO)</th>
-            <th>2021</th>
-        </tr>
-    </table>
-
-    <h2 style="color: #0A043C ;">University Projects</h2>
-    <table border="1">
-        <tr>
-            <th>No</th>
-            <th>Nama</th>
-            <th>Posisi</th>
-            <th>Tahun</th>
-        </tr>
-
-        <tr>
-            <th>1</th>
-            <th>National Webinar Sistem Kepartasian dan Pemilu di Indonesia</th>
-            <th>Publication Decoration and Documentation Division</th>
-            <th>2021</th>
-        </tr>
-
-        <tr>
-            <th>2</th>
-            <th>Webinar Birokrasi Pemerintahan</th>
-            <th>Publication Decoration and Documentation Division</th>
-            <th>2021</th>
-        </tr>
-    </table>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
 </html>

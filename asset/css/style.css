@@ -12,6 +12,10 @@
     height: 95vh;
 }
 
+#hero-portofolio {
+    height: 85vh;
+}
+
 .text-about {
     text-indent: 50px;
     text-align: justify;
